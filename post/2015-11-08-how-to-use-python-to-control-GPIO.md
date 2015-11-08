@@ -6,6 +6,7 @@ python是一种非常简单易学，但又非常强大的编程语言，拥有�
 
 ## 1. 安装基本的python包
 进入Ubuntu系统，打开Linux终端，系统默认安装了python，但还需要安装如下的一些包：
+
  `sudo apt-get install python-requests`  #安装Request:
 `sudo apt-get install python-dev IPython` #安装python-dev 和IPython 
 `sudo apt-get install python-pip  ` #安装python-pip
@@ -20,7 +21,7 @@ python是一种非常简单易学，但又非常强大的编程语言，拥有�
 `python python-pcduino/Samples/blink_led/blink_led.py` # 测试 pcDuino8 Uno上LED7。
 
 
-![pcDuino8 Uno GPIO]("images/pcduino8-gpio.jpg")
+![pcDuino8 Uno GPIO](/images/pcduino8-gpio.jpg/)
 **查看图中 LED7  是否在闪烁！**
 
 ### blink_led的python代码

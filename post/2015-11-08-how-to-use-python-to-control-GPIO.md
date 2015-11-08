@@ -21,7 +21,7 @@ python是一种非常简单易学，但又非常强大的编程语言，拥有�
 `python python-pcduino/Samples/blink_led/blink_led.py` # 测试 pcDuino8 Uno上LED7。
 
 
-![pcDuino8 Uno GPIO](/images/pcduino8-gpio.jpg/)
+![pcDuino8 Uno GPIO](/images/pcduino8-gpio.JPG/)
 **查看图中 LED7  是否在闪烁！**
 
 ### blink_led的python代码

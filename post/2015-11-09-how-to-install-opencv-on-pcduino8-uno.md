@@ -7,21 +7,21 @@
 ## 安装步骤
 ### 1. 安装python相关的包 
 打开Linux终端，运行：
-```sh
+```shell
 $ sudo apt-get install python-pygame python-scipy python-numpy
 $ sudo apt-get install python-pip
 ```
 ### 2. 升级 pip
-```
+```shell
 $ sudo pip install --upgrade pip
 ```
 ### 3. 安装一个虚拟环境
-````
+````shell
 $ sudo pip install virtualenvwrapper
 ```
 ### 4. 修改并切换环境变量
-```
-`$ vi ~/.bashrc #
+```shell
+$ vi ~/.bashrc 
 ```
 添加如下内容：
 > source /usr/local/bin/virtualenvwrapper.sh

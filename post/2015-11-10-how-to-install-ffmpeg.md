@@ -52,6 +52,7 @@ sudo make install
 
 ### 5. 测试
 ip camera的视频流地址是：
+
 > `rtsp://admin:123456@192.168.1.5:554/live0.264`
 
 运行如下命令，将获取的视频流保存为视频文件。
@@ -59,6 +60,7 @@ ip camera的视频流地址是：
 `ffplay  -i rtsp://admin:123456@192.168.1.5:554/live0.264`
 
 ![video](/images/top.png)
+
 看到视频出现，心情一阵阵激动！
 
 ##  参考

@@ -1,7 +1,5 @@
 # 如何在pcDuino8 Uno上安装FFMPEG
-手头上有一个 JVS-H210 的 IP 摄像头，可以输出 rtsp 视频流。pcDuino8 Uno 上如何去读取rtsp视频流呢？尝试了下面的方法。
-
-![JVS-H210](http://en.jovision.com/UpLoadFiles/image/2015040315294235.png)
+手头上有一个 [JVS-H210](http://en.jovision.com/Products/ProductView.aspx?id=239) 的 IP 摄像头，可以输出 rtsp 视频流。pcDuino8 Uno 上如何去读取rtsp视频流呢？尝试了下面的方法。
 
 ## 尝试
 
@@ -22,10 +20,17 @@ git clone git://git.videolan.org/x264
 cd x264
 ./configure --host=arm-unknown-linux-gnueabi --enable-static --disable-opencl
 make
-sudo make install
+sudo make install 
 ```
-### 2. 安装其他函数库/包（可选）
-比如安装支持mp3格式的函数包
+
+### 2. 安装SDL库
+如果不安装SDL库，编译ffmpeg时，将无法生成ffplay命令。
+```shell
+sudo apt-get install  libsdl1.2-dev
+```
+
+### 3. 安装其他函数库/包（可选）
+比如安装支持mp3格式的函数包。
 ```shell
 wget http://downloads.sourceforge.net/project/lame/lame/3.99/lame-3.99.tar.gz
 tar xzvf lame-3.99.tar.gz
@@ -35,7 +40,7 @@ make
 make install
 ```
 
-### 3. 编译安装FFMPEG
+### 4. 编译安装FFMPEG
 ```shell
 git clone git://source.ffmpeg.org/ffmpeg.git ffmpeg
 cd ffmpeg
@@ -45,7 +50,7 @@ sudo make install
 ```
 这一步会花很长时间。
 
-### 4. 测试
+### 5. 测试
 ip camera的视频流地址是：
 > `rtsp://admin:123456@192.168.1.5:554/live0.264`
 

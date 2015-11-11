@@ -1,3 +1,5 @@
+# 如何给pcDuino8 Uno制作可启动的SD卡
+
 pcDuino8 Uno 板上未带有Flash，系统要从SD卡启动。下面将介绍如何给pcDuino8 Uno制作可启动的SD卡。
 
 ### 1. 准备
@@ -11,10 +13,10 @@ pcDuino8 Uno 板上未带有Flash，系统要从SD卡启动。下面将介绍如
 
 SD卡插入取卡器，接上电脑，如果是Windows 7 或以上，以管理员的身份打开Win32DiskImager。
 
-1. 在 Image File选择下载解压后的系统镜像文件
-2. 在Device 中选择PC识别SD卡后弹出的磁盘
-3. 点击Write
-4. 等待写入完成，最终会提示“Write Successful”。
+1. 在 **Image File**选择下载解压后的系统镜像文件
+2. 在**Device** 中选择PC识别SD卡后弹出的磁盘
+3. 点击 **Write**
+4. 等待写入完成，最终会提示**“Write Successful”**。
 
 **注意：文件路径不能出现中文字符，否则会写入失败！**
 

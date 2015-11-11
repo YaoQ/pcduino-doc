@@ -56,15 +56,10 @@ ip camera的视频流地址是：
 
 运行如下命令，将获取的视频流保存为视频文件。
 
-`ffmpeg -rtsp_transport tcp -i rtsp://admin:123456@192.168.1.5:554/live0.264 stream.mkv`
+`ffplay  -i rtsp://admin:123456@192.168.1.5:554/live0.264`
 
-输入**"q"**，停止保存。用 VLC 或者 ffplayer 打开保存的视频文件：
-
-`vlc stream.mkv`
-
-由于是视频流是软解，可以用top命令查看处理器使用率超过90%。
-
-![cpu](/images/top.png)
+![video](/images/top.png)
+看到视频出现，心情一阵阵激动！
 
 ##  参考
 1. [Installing FFMPEG for Raspberry Pi](http://www.jeffreythompson.org/blog/2014/11/13/installing-ffmpeg-for-raspberry-pi/)

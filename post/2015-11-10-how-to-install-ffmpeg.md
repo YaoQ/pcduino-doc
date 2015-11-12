@@ -44,7 +44,7 @@ make install
 ```shell
 git clone git://source.ffmpeg.org/ffmpeg.git ffmpeg
 cd ffmpeg
-sudo ./configure --arch=armel --target-os=linux --enable-gpl --enable-libx264 --enable-nonfree
+sudo ./configure --arch=armel --target-os=linux --enable-gpl --enable-libx264 --enable-pic --enable-nonfree
 make -j4
 sudo make install
 ```

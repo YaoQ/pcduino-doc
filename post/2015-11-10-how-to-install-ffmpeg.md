@@ -18,7 +18,7 @@
 cd /usr/src
 git clone git://git.videolan.org/x264
 cd x264
-./configure --host=arm-unknown-linux-gnueabi --enable-static --disable-opencl
+./configure --host=arm-unknown-linux-gnueabi --enable-shared --enable-pic --disable-opencl
 make
 sudo make install 
 ```

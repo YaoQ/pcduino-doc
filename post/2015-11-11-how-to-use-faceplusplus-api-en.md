@@ -152,6 +152,7 @@ Obama, Tom and Yao:
 This is the new face to test:
 ![test](/images/test.jpg)
 ```bash
+$ python create_group.py test
 $ python add_new_face.py tom images/tom.jpg test
 $ python add_new_face.py obama images/obama.jpg test
 $ python add_new_face.py yao images/yao.jpg test

@@ -30,11 +30,11 @@
 
 ![](/images/otg2.png)
 - 硬件分类选择**网络适配器**设备
-- 厂商选择：**Microsoftware Corporation**，网络适配器选择：**Remote NDIS Compatible Device**
+- 厂商选择：**Microsoft Corporation**，网络适配器选择：**Remote NDIS Compatible Device**
 
 ![](/images/otg3.png)
 - 忽略系统可能会提示的数字签名问题，继续安装
-- 进入**网络连接**，应该可以看到多了一个网卡。
+- 进入**网络连接**，应该可以看到多了一个网卡
 
 ### 3. 设置网卡静态IP地址
 右键选中新出现的网卡设备，选择**属性**。设置TCP/IPv4静态IP地址：
@@ -44,6 +44,7 @@
 
 ### 4. 打开vncviewer访问pcDuino8 Uno
 - 打开vncviewer，输入IP地址：**192.168.100.1**。
+
 ![](/images/otg5.png)
 
 - 输入登录密码：**ubuntu**

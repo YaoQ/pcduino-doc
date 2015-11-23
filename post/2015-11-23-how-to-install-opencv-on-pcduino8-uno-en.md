@@ -2,7 +2,7 @@
 
 OpenCV (Open Source Computer Vision) is a library of programming functions mainly aimed at real-time computer vision. The library is cross-platform and free for use under the open-source BSD license.
 
-This tutorial will tell how you how to install OpenCV 2.4.11
+This tutorial will tell how to install OpenCV 2.4.11.
 
 ## Steps
 ### 1. Install Cmake and Python related package 

@@ -5,11 +5,12 @@
 启动pcDuino8 Uno，并连接网络。
 
 ## 安装步骤
-### 1. 安装python相关的包 
+### 1. 安装cmake和python相关的包
 打开Linux终端，运行：
 ```shell
-$ sudo apt-get install python-pygame python-scipy python-numpy
-$ sudo apt-get install python-pip
+$ sudo apt-get -y install cmake
+$ sudo apt-get -y install python-pygame python-scipy python-numpy
+$ sudo apt-get -y install python-pip
 ```
 ### 2. 升级 pip
 ```shell
@@ -34,11 +35,17 @@ $ source ~/.bashrc
 ```shell
 $ mkvirtualenv --system-site-packages env
 ```
-### 7. 下载由Jay Rambhia编写的脚本：
+### 7. 安装依赖关系：
 ```shell
-$ wget https://raw.github.com/jayrambhia/Install-OpenCV/master/Ubuntu/2.4/opencv2_4_5.sh
-$ chmod +x opencv2_4_5.sh  #添加运行权限
-$ ./opencv2_4_5.sh  #执行脚本
+$ sudo apt-get -y install libopencv-dev
+$ sudo apt-get -y install build-essential checkinstall cmake pkg-config yasm
+$ sudo apt-get -y install libtiff4-dev libjpeg-dev libjasper-dev
+$ sudo apt-get -y install libavcodec-dev libavformat-dev libswscale-dev libdc1394-22-dev $ libxine-dev libgstreamer0.10-dev libgstreamer-plugins-base0.10-dev libv4l-dev
+$ sudo apt-get -y install python-dev python-numpy
+$ sudo apt-get -y install libtbb-dev
+$ sudo apt-get -y install libqt4-dev libgtk2.0-dev
+$ sudo apt-get -y install libfaac-dev libmp3lame-dev libopencore-amrnb-dev libopencore-amrwb-dev libtheora-dev libvorbis-dev libxvidcore-dev
+$ sudo apt-get -y install x264 v4l-utils
 ```
 ### 8. 下载OpenCV源码
 ```shell
@@ -46,24 +53,26 @@ $ wget -O OpenCV-2.4.11.zip http://sourceforge.net/projects/opencvlibrary/files/
 ```
 ### 9. 编译并安装代码，需要花费相当长的时间
 ```shell
-$ unzip OpenCv-2.4.11.zip 
+$ unzip OpenCV-2.4.11.zip 
 $ cd opencv-2.4.11
 $ mkdir build
 $ cd build
-$ cmake -D CMAKE_BUILD_TYPE=RELEASE -D CMAKE_INSTALL_PREFIX=/usr/local -D WITH_TBB=ON -D BUILD_NEW_PYTHON_SUPPORT=ON -D INSTALL_C_EXAMPLES=ON -D INSTALL_PYTHON_EXAMPLES=ON -D BUILD_EXAMPLES=ON -D WITH_OPENMP=ON .. #支持python，支持c、python的示例。
-$ make -j4  # 4线程编译
-$ sudo make install # 安装
+$ cmake -D CMAKE_BUILD_TYPE=RELEASE -D CMAKE_INSTALL_PREFIX=/usr/local -D WITH_TBB=ON -D BUILD_NEW_PYTHON_SUPPORT=ON -D INSTALL_C_EXAMPLES=ON -D INSTALL_PYTHON_EXAMPLES=ON -D BUILD_EXAMPLES=ON -D WITH_OPENMP=ON .. 
+$ make -j4  
+$ sudo make install 
 $ sudo sh -c 'echo "/usr/local/lib" > /etc/ld.so.conf.d/opencv.conf'
 $ sudo ldconfig
+$ sh -c 'echo "export PYTHONPATH=/usr/local/lib/python2.7/site-packages:\$PYTHONPATH"  >> ~/.bashrc'
+$ source ~/.bashrc
 ```
 ### 10. 至此 OpenCV 安装完成。
 
 ## 测试
 直接用一个开源的项目来测试编译的代码。
 ```shell
-$ git clone https://github.com/shantnu/FaceDetect  #下载测试代码
+$ git clone https://github.com/shantnu/FaceDetect  
 $ cd FaceDetect
-$ python face_detect.py abba.png haarcascade_frontalface_default.xml #运行测试案例
+$ python face_detect.py abba.png haarcascade_frontalface_default.xml 
 ```
 测试得到如下的结果，终端还能提示出检测到了几张人脸。
 ![Detected](http://cnlearn.linksprite.com/wp-content/uploads/2015/10/41.png)

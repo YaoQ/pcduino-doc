@@ -161,13 +161,13 @@ $ git clone https://github.com/YaoQ/faceplusplus-demo
 基本封装命令的介绍：
 ```bash
 python create_group.py  <group_name> #创建一个组
-python add_new_face.py  <person_name> <image_path> <group_name> #将某个人的脸加入到组中
+python detection.py <image_path> #提取一张人脸照片的信息
+python add_new_face.py  <person_name> <image_path> <group_name> #将某个人的脸加入到组中，并训练模型
 python recognition.py <group_name> <face_image_path> #从组中找寻最像的一张人脸。
-python dump_info    #列出创建的人名和组名
+python dump_info.py    #列出创建的人名和组名
 ```
 其他的命令：
 ```bash
-python recognition.py  <group_name> <image_path>  #用摄像头拍摄人脸，所得到的人脸去组中找寻最像的一张脸。
 python del_group.py <group_name> #删除一个组
 python del_person.py <person_name> #删除一个人
 ```
@@ -183,31 +183,31 @@ $ cd faceplusplus-demo
 $ python detection.py images/tom.jpg
 ```
 检测得到了这张脸的基本信息，内容如下：
->
-> Detection result for {}:
->   {'face': [{'attribute': {'age': {'range': 10, 'value': 37},
->                            'gender': {'confidence': 99.9999,
->                                       'value': 'Male'},
->                            'race': {'confidence': 98.9731,
->                                     'value': 'White'},
->                            'smiling': {'value': 67.826}},
->              'face_id': '5ca95ae41e7319170bb8bf022ad677f3',
->              'position': {'center': {'x': 48.305085, 'y': 54.666667},
->                           'eye_left': {'x': 39.201864, 'y': 45.51},
->                           'eye_right': {'x': 58.873051, 'y': 47.075833},
->                           'height': 44.333333,
->                           'mouth_left': {'x': 38.516441, 'y': 65.636333},
->                           'mouth_right': {'x': 56.491356,
->                                           'y': 66.942833},
->                           'nose': {'x': 46.791017, 'y': 58.3435},
->                           'width': 45.084746},
->              'tag': ''}],
->    'img_height': 630,
->    'img_id': '6bef5d3f0f1bdb0f3840bdd34a54ad30',
->    'img_width': 620,
->    'session_id': '78919817e956400d88398e3535f85cb6',
->    'url': None}  
-
+```
+ Detection result for {}:
+   {'face': [{'attribute': {'age': {'range': 10, 'value': 37},
+                            'gender': {'confidence': 99.9999,
+                                       'value': 'Male'},
+                            'race': {'confidence': 98.9731,
+                                     'value': 'White'},
+                            'smiling': {'value': 67.826}},
+              'face_id': '5ca95ae41e7319170bb8bf022ad677f3',
+              'position': {'center': {'x': 48.305085, 'y': 54.666667},
+                           'eye_left': {'x': 39.201864, 'y': 45.51},
+                           'eye_right': {'x': 58.873051, 'y': 47.075833},
+                           'height': 44.333333,
+                           'mouth_left': {'x': 38.516441, 'y': 65.636333},
+                           'mouth_right': {'x': 56.491356,
+                                           'y': 66.942833},
+                           'nose': {'x': 46.791017, 'y': 58.3435},
+                           'width': 45.084746},
+              'tag': ''}],
+    'img_height': 630,
+    'img_id': '6bef5d3f0f1bdb0f3840bdd34a54ad30',
+    'img_width': 620,
+    'session_id': '78919817e956400d88398e3535f85cb6',
+    'url': None}  
+```
 ## 7. 识别一张人脸
 这一步，我提取了3张人脸的信息，并针对每张脸创建了一个人，再将这3个人加入到一个叫做**test**的组中。然后再找一张新的人脸，去跟组中所有的脸进行匹配，并找出最匹配的那一个人。测试图片有：奥巴马、汤姆·克鲁斯和姚明：
 ![obama](/images/obama.jpg)
@@ -231,7 +231,7 @@ $ python recognition.py test images/test.jpg
 >The person with highest confidence: obama
 Confidence is : 12.066551
 
-图片一对比，就知道检测的结果不尽如人意。
+图片一对比，就知道检测的结果不尽如人意，当然仅仅是几张图片的对比，并不能说明什么问题。一个人，最多可以添加10000张照片，如果这样大规模的加入一个人人脸的特征，识别的准确性应该会有很大提升。
 
 ## 结论
 Face++API对图片有一定质量的要求，而且因为是免费使用，不保证调用服务的稳定性，可能出现内部错误的情况。
@@ -242,6 +242,7 @@ Face++API对图片有一定质量的要求，而且因为是免费使用，不�
 
 需要注意的一些事情：
 1.  图片质量的要求
+
 ![](/images/quality.png)
 2. 常见的错误
  - INTERL_ERROR，可能的原因如下：

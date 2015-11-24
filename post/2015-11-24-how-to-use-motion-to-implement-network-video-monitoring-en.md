@@ -89,7 +89,7 @@ If you want to turn off the motion service, you can run:
 
 ## Test
 First to get the pcDuino8 Uno IP address, you should open a Linux terminal and run `ifconfig` to read the information of network, especially the IP address. Then, open an browser on your PC or mobile devices(Smart Phone or tablet), which are in the same LAN. Enter the pcDuino8 Uno IP Address, like:
-** < pcDuino8 Uno IP Address>:8081**
+ **< pcDuino8 Uno IP Address>:8081**
 
 Now, you can watch the video from your webcam via network.
 

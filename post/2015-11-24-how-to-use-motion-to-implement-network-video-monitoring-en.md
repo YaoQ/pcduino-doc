@@ -27,16 +27,28 @@ sudo vim /etc/motion/motion.conf
 
 The following parameters need to be confirmed：
 > daemon on #default off (This allows the motion to run in the background)
+> 
 > framerate 10 #default 2 (increased framerate)
+> 
 > width 640 #default 320 (changed width to match that of the webcam)
+> 
 > height 480 #default 240 (same as above but for height)
+> 
 > threshold 2000 #default 1500 (*explained in detail below)
+> 
 > pre_capture 2 #default 0 (captures 2 frames before motion was detected and adds that to the videos to make them smoother)
+> 
 > post_capture 5 #default 0 (same as above but captures frames after)
+> 
 > output_normal off #default on (this disables storing images, since we only require video)
+> 
 > ffmpeg_video_codec msmpeg4 #default swf (msmpeg4 is accepted by windows media player, hence easier to play on Windows)
+> 
 > target_dir /mnt/motionvideos #default /tmp/motion (changed the directory where videos will be stored)
-> webcam_maxrate 5 #default 1 (increase the max framerate on lie stream)
+> 
+> 
+>webcam_maxrate 5 #default 1 (increase the max framerate on lie stream)
+>
 > webcam_localhost off #default on (allows you to set up a live stream of the webcam)
 
 **Note: you need change some parameters above which are based on what kind of webcam you choose!**

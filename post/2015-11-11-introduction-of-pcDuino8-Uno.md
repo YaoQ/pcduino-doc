@@ -59,7 +59,7 @@ pcDuino8 Uno采用全志的H8 SoC，CPU基于台积电最新领先的28纳米制
 
 ## 外部接口分布
 
-![IO](/images/pcduino8-gpio.jpg)
+![IO](/images/pcduino8-gpio.JPG)
 
 ## pcDuino8 Uno V.S. 树莓派2
 

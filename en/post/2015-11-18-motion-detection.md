@@ -35,7 +35,7 @@ $ python motion-detector.py -c conf.json
 ```
 ![](/images/motion.png)
 
-If you use different types of webcams or want to change the interval time to save a picture, and so on, you should modify these parameters in **conf.json**. 
+If you use different types of webcams or want to change the interval time to save a picture, and so on, you should modify these parameters in **conf.json**.
 
 [1]:http://www.pyimagesearch.com/author/adrian/
 [2]:http://www.pyimagesearch.com/2015/06/01/home-surveillance-and-motion-detection-with-the-raspberry-pi-python-and-opencv/

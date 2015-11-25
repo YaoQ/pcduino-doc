@@ -3,7 +3,7 @@
 ## 介绍
 [Adrian Rosebrock](http://www.pyimagesearch.com/author/adrian/) 写了一篇博文 , 叫做 " [Home surveillance and motion detection with the Raspberry Pi, Python, OpenCV, and Dropbox](http://www.pyimagesearch.com/2015/06/01/home-surveillance-and-motion-detection-with-the-raspberry-pi-python-and-opencv/)". 非常有趣的一个项目，用树莓派和网络摄像头实现的。只要镜头前有物体运动，就会从当时拍摄的视频中截取一帧，将该移动物体的照片上传到Dropbox中。
 
-![home surveillance](images/pi_home_surveillance_animated.gif)
+![home surveillance](/images/pi_home_surveillance_animated.gif)
 
 整个设计做起来不是很难，我直接将该设计移植到了pcDuino8 Uno。
 
@@ -12,7 +12,7 @@
 - pcDuino8 Uno
 - USB UVC 摄像头
 
-![](images/cam_p8.png)
+![](/images/cam_p8.png)
 
 **软件**
 - Ubuntu 14.04

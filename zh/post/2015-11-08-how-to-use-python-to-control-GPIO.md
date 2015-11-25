@@ -22,7 +22,7 @@ $ git clone https://github.com/pcduino/python-pcduino.git  #下载python测试�
 $ cd python-pcduino
 python python-pcduino/Samples/blink_led/blink_led.py  # 测试 pcDuino8 Uno上LED7。
 ```
-![pcDuino8 Uno GPIO](/zh/images/pcduino8-gpio.JPG/)
+![pcDuino8 Uno GPIO](/images/pcduino8-gpio.JPG/)
 
 **查看图中 LED7  是否在闪烁！**
 

@@ -7,7 +7,7 @@ pcDuino8 Uno带有兼容Arduino Uno板的I/O接口，所以很多兼容Arduino�
 
 开源硬件开发中的“点灯“，就跟软件编程中的“Hello World！”程序一样，是每个程序员必经之路，话不多说，直接上步骤。为了简单起见，示例仅演示如何控制GPIO口来控制板上的LED等。
 
-![Arduino GPIO](/images/arduino-gpio.png)
+![Arduino GPIO](/zh/images/arduino-gpio.png)
 
 ## 步骤
 

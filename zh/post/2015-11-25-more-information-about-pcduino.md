@@ -1,7 +1,7 @@
 # 更多pcDuino8 Uno资料
 整理一下与pcDuino8 Uno相关的资源和网址。
 
-## 官方资源 
+## 官方资源
 1. [pcDuino官方网站](www.linksprite.com)
 2. [英文学习中心](learn.linksprite.com)
 3. [英文论坛](http://forum.linksprite.com/)

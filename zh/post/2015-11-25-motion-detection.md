@@ -38,6 +38,6 @@ $ ls /dev/video0
 $ python motion-detector.py -c conf.json
 ```
 
-![](images/motion.png)
+![](/images/motion.png)
 
 如果使用了不同型号的网络摄像头，或者修改保存一张图片的间隔时间，等等，你需要根据实际情况修改**conf.json**中的参数。

@@ -83,7 +83,7 @@ pcDuino8 Uno采用全志的H8 SoC，CPU基于台积电最新领先的28纳米制
 
 ## 试用体验
 
-![handon](https://github.com/tinyclub/tinylab.org/blob/master/images/boards/pcduino/pcduino8_uno_4.jpg)
+![handon](/images/pcduino8_uno_4.jpg)
 
 pcDuino8 Uno 拿在手上，确实小巧，迫不及待地按照网上提供的教程刷了 Ubuntu 14.04 系统。接上显示器，鼠标和键盘，上电启动，10 秒左右，进入系统桌面，这速度真是够可以的。再想想我现在快要淘汰的笔记本，开机速度接近两分钟，这一对比，心中都是泪啊。
 

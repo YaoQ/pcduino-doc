@@ -69,15 +69,15 @@ ROS中有很多不同的库和工具，但是并没有全部在ARM编译过。�
 
 在开始使用ROS之前你还需要初始化rosdep。rosdep可以方便在你需要编译某些源码的时候为其安装一些系统依赖，同时也是某些ROS核心功能组件所必需用到的工具。
 
-	sudo apt-get install python-rosdep 
-	sudo rosdep init 
+	sudo apt-get install python-rosdep
+	sudo rosdep init
 	rosdep update
 
 ### 6. 环境设置
 
 如果每次打开一个新的终端时ROS环境变量都可以自动配置（即添加到bash会话中），那将会方便很多：
 
-	echo "source /opt/ros/indigo/setup.bash" >> ~/.bashrc 
+	echo "source /opt/ros/indigo/setup.bash" >> ~/.bashrc
 	source ~/.bashrc
 
 如果你只想改变当前终端下的环境变量，你可以执行命令：

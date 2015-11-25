@@ -17,13 +17,21 @@ $ ifconfig         #查看RJ45网口的IP地址
 显示类似如下的信息：
 
 > eth0 Link encap:Ethernet HWaddr 10:00:a4:f3:1d:df
+>
 > inet addr:**192.168.1.33** Bcast:192.168.1.255 Mask:255.255.255.0
+>
 > inet6 addr: fe80::1200:a4ff:fef3:1ddf/64 Scope:Link
+>
 > UP BROADCAST RUNNING MULTICAST MTU:1500 Metric:1
+>
 > RX packets:26 errors:0 dropped:0 overruns:0 frame:0
+>
 > TX packets:66 errors:0 dropped:0 overruns:0 carrier:0
+>
 > collisions:0 txqueuelen:1000
+>
 > RX bytes:2892 (2.8 KB) TX bytes:9481 (9.4 KB)
+>
 > Interrupt:114
 
 如果看不到eth0的IP地址，通过如下命令获取：
@@ -47,10 +55,13 @@ ps -A | grep vnc      #打印当前运行的程序，并列出带有vnc的行。
 1. 在Windows上下载并安装[VNCViewer](http://www.realvnc.com/download/viewer/)软件。
 
 2. 打开VNCViewer，输入刚才所看到的IP地址。
+
 ![vnc](http://cnlearn.linksprite.com/wp-content/uploads/2015/10/vnc-300x156.png)
 
 3. 输入密码，默认是：ubuntu
+
 ![passwd](http://cnlearn.linksprite.com/wp-content/uploads/2015/10/QQ%E6%88%AA%E5%9B%BE20151029152310.png)
 
 4. 连接成功后，便可以远程桌面访问了。
+
 ![desktop](http://cnlearn.linksprite.com/wp-content/uploads/2015/10/desktop-300x223.png)

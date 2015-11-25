@@ -21,8 +21,8 @@ git clone https://github.com/pcduino/c_environment  #下载开发环境
 ### 2.  编译
 
 ```bash
-cd c_environment  #进入开发环境 
-vim sample/linker_led_test.c  #查看源代码 
+cd c_environment  #进入开发环境
+vim sample/linker_led_test.c  #查看源代码
 make  #编译所有示例代码
 ```
 
@@ -43,28 +43,28 @@ Arduino程序清单：
 */
 #include <core.h>
 int led_pin = 1;
- 
+
 void setup()
 {
 #ifndef PCDUINO_IDE
     if(argc != 2){
         goto _help;
     }
- 
+
     led_pin = atoi(argv[1]);
 #endif
     if((led_pin < 0) || (led_pin > 13)){
         goto _help;
     }
- 
+
     pinMode(led_pin, OUTPUT);
   return;
- 
+
 _help:
     printf("Usage %s LED_PIN_NUM(0-13)\n", argv[0]);
     exit(-1);
 }
- 
+
 void loop()
 {
   digitalWrite(led_pin, HIGH);  // 开启LED

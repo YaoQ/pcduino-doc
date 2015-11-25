@@ -15,7 +15,6 @@
     * [在pcDuino8 Uno上如何安装FFMPEG](/post/2015-11-10-how-to-install-ffmpeg.md)
     * [在pcDuino8 Uno上如何安装OpenCV，并实现人脸识别](/post/2015-11-09-how-to-install-opencv-on-pcduino8-uno.md)
     * [如何使用motion实现网络视频监控](/post/2015-11-11-how-to-use-motion-to-implement-network-video-monitoring.md)
-    * [在pcDuino8 Uno上如何使用Face++ API实现人脸识别](/master/post/2015-11-14-how-to-use-faceplusplus.md)
-    * [Motion detection using OpenCV](/post/2015-11-18-motion-detection.md)
+    * [在pcDuino8 Uno上如何使用Face++ API实现人脸识别](/post/2015-11-14-how-to-use-faceplusplus.md)
 * [ROS系列]
     * [如何在Ubuntu 14.04 安装 ROS Indigo](/post/2015-11-11-how-to-install-ros-indigo.md)

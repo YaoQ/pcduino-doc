@@ -22,7 +22,7 @@ $ sudo pip install virtualenvwrapper
 ```
 ### 4. 修改并切换环境变量
 ```shell
-$ vi ~/.bashrc 
+$ vi ~/.bashrc
 ```
 添加如下内容：
 > source /usr/local/bin/virtualenvwrapper.sh
@@ -53,13 +53,13 @@ $ wget -O OpenCV-2.4.11.zip http://sourceforge.net/projects/opencvlibrary/files/
 ```
 ### 9. 编译并安装代码，需要花费相当长的时间
 ```shell
-$ unzip OpenCV-2.4.11.zip 
+$ unzip OpenCV-2.4.11.zip
 $ cd opencv-2.4.11
 $ mkdir build
 $ cd build
-$ cmake -D CMAKE_BUILD_TYPE=RELEASE -D CMAKE_INSTALL_PREFIX=/usr/local -D WITH_TBB=ON -D BUILD_NEW_PYTHON_SUPPORT=ON -D INSTALL_C_EXAMPLES=ON -D INSTALL_PYTHON_EXAMPLES=ON -D BUILD_EXAMPLES=ON -D WITH_OPENMP=ON .. 
-$ make -j4  
-$ sudo make install 
+$ cmake -D CMAKE_BUILD_TYPE=RELEASE -D CMAKE_INSTALL_PREFIX=/usr/local -D WITH_TBB=ON -D BUILD_NEW_PYTHON_SUPPORT=ON -D INSTALL_C_EXAMPLES=ON -D INSTALL_PYTHON_EXAMPLES=ON -D BUILD_EXAMPLES=ON -D WITH_OPENMP=ON ..
+$ make -j4
+$ sudo make install
 $ sudo sh -c 'echo "/usr/local/lib" > /etc/ld.so.conf.d/opencv.conf'
 $ sudo ldconfig
 $ sh -c 'echo "export PYTHONPATH=/usr/local/lib/python2.7/site-packages:\$PYTHONPATH"  >> ~/.bashrc'
@@ -70,9 +70,9 @@ $ source ~/.bashrc
 ## 测试
 直接用一个开源的项目来测试编译的代码。
 ```shell
-$ git clone https://github.com/shantnu/FaceDetect  
+$ git clone https://github.com/shantnu/FaceDetect
 $ cd FaceDetect
-$ python face_detect.py abba.png haarcascade_frontalface_default.xml 
+$ python face_detect.py abba.png haarcascade_frontalface_default.xml
 ```
 测试得到如下的结果，终端还能提示出检测到了几张人脸。
 ![Detected](http://cnlearn.linksprite.com/wp-content/uploads/2015/10/41.png)

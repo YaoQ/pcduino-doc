@@ -4,8 +4,8 @@
 ## 步骤
 
 ### 下载
- 1. [Android 系统镜像](https://s3.amazonaws.com/pcduino/Images/pcduino8/pcDuino8Uno/Android/pcduino8_android_20150913.img)
- 2. [Phonenix Card烧写工具](https://s3.amazonaws.com/pcduino/Tools/PhoenixCard_V309.zip)
+ 1. [Android 系统镜像:pcduino8_android_20150913.img](http://pan.baidu.com/s/1nt1YGBZ#path=%252FpcDuino)
+ 2. [PhonenixCard V309烧写工具](http://pan.baidu.com/s/1nt1YGBZ#path=%252FpcDuino%252Ftools)
 
 ### 烧录
 1.  插入SD卡，选择系统识别到的磁盘。
@@ -14,6 +14,7 @@
 4.  工具最后显示，烧录成功。
 
 注意：**系统镜像的路径不能包含中文**
+
 ![android](/images/android.png)
 
 

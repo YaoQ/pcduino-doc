@@ -40,7 +40,7 @@ $ mkvirtualenv --system-site-packages env
 $ sudo apt-get -y install libopencv-dev
 $ sudo apt-get -y install build-essential checkinstall cmake pkg-config yasm
 $ sudo apt-get -y install libtiff4-dev libjpeg-dev libjasper-dev
-$ sudo apt-get -y install libavcodec-dev libavformat-dev libswscale-dev libdc1394-22-dev $ libxine-dev libgstreamer0.10-dev libgstreamer-plugins-base0.10-dev libv4l-dev
+$ sudo apt-get -y install libavcodec-dev libavformat-dev libswscale-dev libdc1394-22-dev libxine-dev libgstreamer0.10-dev libgstreamer-plugins-base0.10-dev libv4l-dev
 $ sudo apt-get -y install python-dev python-numpy
 $ sudo apt-get -y install libtbb-dev
 $ sudo apt-get -y install libqt4-dev libgtk2.0-dev

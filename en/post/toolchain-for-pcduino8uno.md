@@ -25,15 +25,22 @@ apt-get install build-essential git debootstrap u-boot-tools device-tree-compile
 
 ## Another way to get Linaro toolchain
 It lists the following toolchains which are tar file.
+
 1. [gcc-linaro 4.7 (4.7-2014.06)](http://releases.linaro.org/14.06/components/toolchain/gcc-linaro/4.7)
+
 2. [gcc-linaro 4.8 (4.8-2014.04)](http://releases.linaro.org/14.04/components/toolchain/gcc-linaro/4.8)
+
 3. [gcc-linaro 4.9 (4.9-2014.07)](http://releases.linaro.org/14.07/components/toolchain/gcc-linaro/4.9)
+
 **When in doubt, try 4.7 first.**
 
 **WARNING**: Do not use the 4.8 gcc versions of the linaro toolchain to build legacy kernels (Linux kernel 3.4.39 etc.), those seem to have issues building the kernel. Use an earlier version instead. (TODO: Verify that this is still true today).
 
 More information you can take from the following website:
+
 1. [Linaro toolchain Wiki](https://wiki.linaro.org/WorkingGroups/ToolChain)
+
 2. [Sunxi Linux Wiki](http://linux-sunxi.org/Toolchain)
+
 3. [Buildup Linux 4.x & Ubuntu System on pcDuino3 Nano](http://learn.linksprite.com/pcduino/buildup-linux-4-x-ubuntu-system-on-pcduino3-nano-2/)
 

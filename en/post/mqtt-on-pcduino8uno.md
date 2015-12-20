@@ -68,8 +68,11 @@ mosquitto_pub -h <your IP address> gpio -m '"value":1'
 mosquitto_pub -h <your IP address> gpio -m '"value":0'
 mosquitto_pub -h <your IP address> gpio -m '"value":1'
 ```
+
 ![](../images/mqtt-pub.png)
+
 Notice the information from the listener and the status of LED1 on pcDuino8 Uno.
+
 ![](../images/mqtt-client.png)
 
 ## Ref

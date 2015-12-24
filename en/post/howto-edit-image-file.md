@@ -25,6 +25,7 @@ These can be used with the offset option of the mount command. We also have a cl
 mount -v -o offset=4194304 -t vfat whatever.img /mnt/img/one
 mount -v -o offset=62914560 -t ext4 whatever.img /mnt/img/two
 ```
+Note:If you have a error when you mount the image file, please try **-t auto** option instead of **-t ext4**
 
 You can now access the two partitions. If you do not intend to change anything in them, use the **-r** (read-only) switch too. If you do change anything, those changes will be included in the .img file.
 

@@ -22,7 +22,6 @@ Note: Global node_modules file path shuold be /usr/lib/node_modules, or /usr/loc
 ### 3. Install required node modules with npm
 ```bash
 sudo npm install hapi -g
-sudo npm install mqtt -g
 ```
 
 ### 4. Write JavaScript code

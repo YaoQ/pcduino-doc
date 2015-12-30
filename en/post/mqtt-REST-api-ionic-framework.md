@@ -16,6 +16,7 @@ The system is based on pcDuino8 Uno and run Node.js REST API server, MQTT Broker
 * python for pcduino
 
 ## Install MQTT Server on pcDuino8 Uno
+
 ### 1. Install node and npm
 ```bash
 sudo ntpdate us.pool.ntp.org
@@ -27,6 +28,7 @@ sudo apt-get install -y npm
 echo "export NODE_PATH=/usr/local/lib/node_modules" >> ~/.bashrc
 source ~/.bashrc
 ```
+
 ### 2. Install MQTT node module
 ```
 sudo npm install mosca -g
@@ -94,6 +96,11 @@ server.route([
 server.start();
 
 ```
+
+If you get this error, it means node version is lower than 4.0, and you should update the node, also update the npm using:
+```
+sudo npm install npm -g
+```
 >/usr/local/lib/node_modules/hapi/lib/index.js:5
 > const Server = require('./server');
 > ^^^^^
@@ -109,10 +116,6 @@ server.start();
 >    at Object.Module._extensions..js (module.js:474:10)
 >    at Module.load (module.js:356:32)
 
-If you get this error, it means node version is lower than 4.0, and you should update the node, also update the npm using:
-```
-sudo npm install npm -g
-```
 
 ## MQTT Client for Subscriber(Python)
 ```

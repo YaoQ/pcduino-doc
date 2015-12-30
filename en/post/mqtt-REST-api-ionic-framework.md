@@ -67,7 +67,7 @@ console.log(process.pid);
 sudo npm install hapi -g
 ```
 
-### 4. Write JavaScript code
+### Write JavaScript code
 ```bash
 vim index.js
 ```
@@ -95,19 +95,19 @@ server.start();
 
 ```
 >/usr/local/lib/node_modules/hapi/lib/index.js:5
-const Server = require('./server');
-^^^^^
-SyntaxError: Use of const in strict mode.
-    at Module._compile (module.js:439:25)
-    at Object.Module._extensions..js (module.js:474:10)
-    at Module.load (module.js:356:32)
-    at Function.Module._load (module.js:312:12)
-    at Module.require (module.js:364:17)
-    at require (module.js:380:17)
-    at Object.<anonymous> (/home/linaro/iot/mqtt-pub-rest-api/index.js:1:74)
-    at Module._compile (module.js:456:26)
-    at Object.Module._extensions..js (module.js:474:10)
-    at Module.load (module.js:356:32)
+> const Server = require('./server');
+> ^^^^^
+>SyntaxError: Use of const in strict mode.
+>    at Module._compile (module.js:439:25)
+>    at Object.Module._extensions..js (module.js:474:10)
+>    at Module.load (module.js:356:32)
+>    at Function.Module._load (module.js:312:12)
+>    at Module.require (module.js:364:17)
+>    at require (module.js:380:17)
+>    at Object.<anonymous> (/home/linaro/iot/mqtt-pub-rest-api/index.js:1:74)
+>    at Module._compile (module.js:456:26)
+>    at Object.Module._extensions..js (module.js:474:10)
+>    at Module.load (module.js:356:32)
 
 If you get this error, it means node version is lower than 4.0, and you should update the node, also update the npm using:
 ```
@@ -226,8 +226,10 @@ sudo vim /etc/profile
 and append the following:
 
 > export PATH=${PATH}:/usr/local/android-sdk-linux/tools
+> 
 > export PATH=${PATH}:/usr/local/android-sdk-linux/platform-tools
-> Save the file. Now you need to reload these variables. In your terminal, type:
+
+Save the file. Now you need to reload these variables. In your terminal, type:
 
 ```bash
 . /etc/profile
@@ -301,7 +303,7 @@ ionic plugin add https://github.com/apache/cordova-plugin-whitelist.git
 ### Put all together
 
 #### Install the generated APK on your android phone
-![](../images/android.png)
+![](../images/app.png)
 
 ### Run script file 
 ![](../images/terminal.png)

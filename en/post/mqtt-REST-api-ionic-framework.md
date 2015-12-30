@@ -1,4 +1,4 @@
-# Mobile App Controlled LED through ESP8266 via MQTT+HTTP
+# Mobile App Controlled LED through pcDuino via MQTT+HTTP
 The system is based on pcDuino8 Uno and run Node.js REST API server, MQTT Broker locally.The Android Mobile App is built using Ionic Framework utilizing AngularJs. 
 
 ![](../images/iot-pcduino.png)

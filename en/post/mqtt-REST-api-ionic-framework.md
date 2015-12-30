@@ -131,7 +131,7 @@ import json
 import gpio
 dev1_pin = "gpio19"
 dev2_pin = "gpio18"
-ip_address= "192.168.1.106"
+ip_address= "localhost"
 
 def setup():
     gpio.pinMode(dev1_pin, gpio.OUTPUT)
@@ -240,19 +240,19 @@ sudo apt-get install lib32z1
 
 These are the 32-bit libraries that the Android SDK needs.
 
-### Checking the Setup
+#### Checking the Setup
 Time to check if all went well. Type the following in your terminal:
 ```bash
 cd ~
 android
 ```
 This should fire up your Android SDK Manager.
-### Install SDK tools
+#### Install SDK tools
 ![](../images/android-sdk.png)
 
 If you want to emulate your app, you also should install an System Image and use `android avd` to manager your Android Virtual Device(AVD).
 
-### Manager Android Virtual Device(optional)
+#### Manager Android Virtual Device(optional)
 ```
 android avd
 ```
@@ -272,7 +272,7 @@ angular.module('starter.services', [])
 .factory('Devices', function($http) {
   // Might use a resource here that returns a JSON array
 
-  var ipServer = 'http://192.168.1.106:4444';
+  var ipServer = 'http://<your pcduino ip address>:4444';
 
   return {
     deviceCommand: function(data) {
@@ -290,11 +290,23 @@ ionic platform add android
 ionic serve
 ionic build android
 ```
+The APK file is located at platforms/android/build/outputs/apk/android-debug.apk.
 
+**Note：*
 If your app can not access network please take the following commands:
 ```
 ionic plugin add https://github.com/apache/cordova-plugin-whitelist.git
 ```
+
+### Put all together
+
+#### Install the generated APK on your android phone
+![](../images/android.png)
+
+### Run script file 
+![](../images/terminal.png)
+
+Click on and off bar on APP to check the status of LED7 and LED8!
 
 
 

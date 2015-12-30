@@ -12,13 +12,16 @@ sudo cp * /usr/lib/chromium-browser/plugins
 ```
 
 or later version. With the same steps as above, just replace version numbers as required.
-```
 Uncomment the line starting with "CHROMIUM_FLAGS=". Add the following line.
-```
+
+```bash
 sudo vim  /etc/chromium-browser/default
 ```
+
 Add the following line:
+
 > CHROMIUM_FLAGS="--ppapi-flash-path=/usr/lib/chromium-browser/plugins/libpepflashplayer.so --ppapi-flash-version=12.0.0.77 -password-store=detect -user-data-dir"
+
 
 * Save
 * Open Chromium-browser

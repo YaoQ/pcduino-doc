@@ -173,7 +173,6 @@ except KeyboardInterrupt:
 ```
 
 
-
 ## Develop APP using Ionic Framework(on Ubuntu 14.04 X64 PC)
 
 
@@ -198,7 +197,66 @@ Require:
 * Android SDK Build-tools 23.0.2
 
 ### Install JDK and android SDK
-Install and update your environment in .bashrc file!
+#### Download SDK
+Go to [Andorid SDK](http://developer.android.com/sdk/index.html) and scroll down till you find the “Other Download Options” section. In the “SDK Tools Only” section, select the Linux package. Wait for the download to finish.
+
+#### Extracting the SDK
+By default, the downloads go to the Downloads folder in the home directory. We will, however, move the SDK archive to /usr/local and extract it there. Fire up a terminal window by pressing CTRL - ALT - T. Then type the following:
+```bash
+cd ~/Downloads
+sudo mv android* /usr/local
+cd /usr/local
+sudo tar zxvf android*
+```
+Using ls will show you the android-sdk-linux folder.
+
+#### Changing the Permissions
+You also need to change the permissions for the android-sdk-linux. In the terminal window, type the following:
+```bash
+sudo chmod -R ugo+rwx android-sdk-linux
+```
+
+This will recursively give read, write, and execute permissions to the android-sdk-linux and all it’s children. This can take a few seconds to complete.
+
+#### Setting the Environment Variables
+You now need to set the environment variables. In your terminal window type the following:
+```bash
+sudo vim /etc/profile
+```
+and append the following:
+
+> export PATH=${PATH}:/usr/local/android-sdk-linux/tools
+> export PATH=${PATH}:/usr/local/android-sdk-linux/platform-tools
+> Save the file. Now you need to reload these variables. In your terminal, type:
+
+```bash
+. /etc/profile
+```
+For the most part, you are done. There are a few additional libraries you need if you are on a 64-bit machine. If you are, type the following in your terminal:
+```bash
+sudo apt-get install lib32stdc++6
+sudo apt-get install lib32z1
+```
+
+These are the 32-bit libraries that the Android SDK needs.
+
+### Checking the Setup
+Time to check if all went well. Type the following in your terminal:
+```bash
+cd ~
+android
+```
+This should fire up your Android SDK Manager.
+### Install SDK tools
+![](../images/android-sdk.png)
+
+If you want to emulate your app, you also should install an System Image and use `android avd` to manager your Android Virtual Device(AVD).
+
+### Manager Android Virtual Device(optional)
+```
+android avd
+```
+![](../images/avd.png)
 
 ### Install cordova and ionic
 ```

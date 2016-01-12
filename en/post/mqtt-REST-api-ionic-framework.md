@@ -297,7 +297,7 @@ ionic build android
 ```
 The APK file is located at platforms/android/build/outputs/apk/android-debug.apk.
 
-**Note：*
+**Note：**
 If your app can not access network please take the following commands:
 ```
 ionic plugin add https://github.com/apache/cordova-plugin-whitelist.git
@@ -306,6 +306,16 @@ ionic plugin add https://github.com/apache/cordova-plugin-whitelist.git
 ### Put all together
 
 #### Install the generated APK on your android phone
+```bash
+git clone https://github.com/YaoQ/iot-pcduino
+```
+There are three directories:
+- **mqtt-pub-rest-api**: Node.JS, used as REST API server and MQTT publisher that send the message.
+- **mqtt-server **: Node.JS, used as MQTT server.
+- **mqtt-sub-on-pcduino**: python script, used as mqtt subscriber to get the message and control the GPIO.
+
+**Note**: If you can't connect between server and client, please make sure the change the localhost in the source code to your IP address.
+
 ![](../images/app.png)
 
 ### Run script file 

@@ -9,7 +9,7 @@ Download the Adobe Air and Scratch files from:
 - [scratch2 for Linux](https://scratch.mit.edu/scratchr2/static/sa/Scratch-442.air)
 - [Adobe Air for Linux](http://airdownload.adobe.com/air/lin/download/2.6/AdobeAIRInstaller.bin)
 
-Note: Other version please check this [Scratch2download website](https://scratch.mit.edu/scratch2download/)
+Note: Other version please check this [Scratch2 download website](https://scratch.mit.edu/scratch2download/)
 
 ## Install on Ubuntu 14.04 i386
 
@@ -38,7 +38,7 @@ sudo apt-get install libxt6:i386 libnspr4-0d:i386 libgtk2.0-0:i386 libstdc++6:i3
 ```
 **Note:** Many people have installed these libraries successfully but as to me, I got many package dependency errors which make me crazy, even I install these libraries on a new Ubuntu 14.04 x64 system, there are also many dependency errors. I give up and if you make it, please tell me! 
 
-### 2. install AdobeAIR
+### 2. Install AdobeAIR
 Now you have to create a symbolic link to your gnome keyring:
 ```bash
 sudo ln -s /usr/lib/x86_64-linux-gnu/libgnome-keyring.so.0 /usr/lib/libgnome-keyring.so.0

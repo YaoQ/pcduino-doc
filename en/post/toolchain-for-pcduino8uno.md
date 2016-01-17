@@ -6,7 +6,7 @@ You can easily install arm cross-compiler on Ubuntu 14.04 as follows:
 
 ```bash
 sudo apt-get install libc6:i386 libstdc++6:i386 libncurses5:i386 zlib1g:i386
-sudo apt-get arm-linux-gnueabihf
+sudo apt-get install gcc-4.8-arm-linux-gnueabihf
 sudo apt-get install libncurses5-dev libncursesw5-dev device-tree-compiler u-boot-tools
 
 ```

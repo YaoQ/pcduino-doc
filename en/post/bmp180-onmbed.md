@@ -6,7 +6,7 @@ The BMP180 offers a pressure measuring range of 300 to 1100 hPa with an accuracy
 
 ![](../images/bmp180-ontag.png)
 
-NRF51822 communicates with BMP180 using I2C port and the **SCL** port is connected to **P0.18** and **SDA** port is connected to **P0.17**.
+NRF51822 communicates with BMP180 using I2C port. The **SCL** port is connected to **P0.18** and **SDA** port is connected to **P0.17**.
 
 ![](../images/i2c-bmp180.png)
 
@@ -20,7 +20,7 @@ This tutorial will introduce how to use BMP180 to get barometric pressure and te
 ## Steps
 * Open online mbed compiler and import a program from mbed.org.
 * Search programs using **bmp180** keyword and you will find **BMP180_example** program.
-* Import a mbed libraries into BMP180_example.
+* Import a mbed libraries into **BMP180_example**.
 
 ![](../images/import-mbed.png)
 
@@ -36,8 +36,8 @@ This tutorial will introduce how to use BMP180 to get barometric pressure and te
 * Open a serial program on PC to read the UART data sent from device.
 	* Baud rate: 9600
 	* Data : 8 bit
-	* Stop: 1bit
-* There will be data printed on the Serial window. 
+	* Stop: 1 bit
+* There will be data printed on the serial window. 
 
 ![](../images/log.png)
 

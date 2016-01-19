@@ -1,6 +1,6 @@
 # BMP180 barometric pressure sensor
 
-## Introudction
+## Introduction
 
 The BMP180 offers a pressure measuring range of 300 to 1100 hPa with an accuracy down to 0.02 hPa in advanced resolution mode. It’s based on piezo-resistive technology for high accuracy, ruggedness and long term stability. The chip only accepts 1.8V to 3.6V input voltage.
 
@@ -8,11 +8,9 @@ The BMP180 offers a pressure measuring range of 300 to 1100 hPa with an accuracy
 
 NRF51822 communicates with BMP180 using I2C port and the **SCL** port is connected to **P0.18** and **SDA** port is connected to **P0.17**.
 
-
 ![](../images/i2c-bmp180.png)
 
-
-This totutial will introduce how to use BMP180 to get arometric pressure and temperature data and print these data to serial port. 
+This tutorial will introduce how to use BMP180 to get barometric pressure and temperature data and print these data to serial port. 
 
 ## Pre-requisites
 * BLE SENSORS TAG x 1
@@ -39,8 +37,10 @@ This totutial will introduce how to use BMP180 to get arometric pressure and tem
 	* Baud rate: 9600
 	* Data : 8 bit
 	* Stop: 1bit
-* There will be data printted on the Serial window. 
+* There will be data printed on the Serial window. 
+
 ![](../images/log.png)
+
 ## Source code
 
 ```c

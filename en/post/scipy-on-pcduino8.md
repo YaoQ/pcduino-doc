@@ -124,13 +124,13 @@ cd matplotlib
 python setup.py install
 ```
 After **matplotlib**  has been installed via source, let’s execute the `get_backend()`  function:
->linaro@linaro-alip:~/matplotlib$ python
-Python 2.7.6 (default, Mar 22 2014, 23:30:12) 
-[GCC 4.8.2] on linux2
-Type "help", "copyright", "credits" or "license" for more information.
-\>>> import matplotlib
-\>>> matplotlib.get_backend()
-u'TkAgg'
+>linaro@linaro-alip:~/matplotlib$ python  
+Python 2.7.6 (default, Mar 22 2014, 23:30:12)   
+[GCC 4.8.2] on linux2  
+Type "help", "copyright", "credits" or "license" for more information.  
+\>>> import matplotlib  
+\>>> matplotlib.get_backend()  
+u'TkAgg'  
 
 Sure enough, we now see the `TkAgg` is being used as the **matplotlib** backend.
 

@@ -1,4 +1,4 @@
-# SciPy on pcDuino8 Uno
+# "Matlab" on pcDuino8 Uno
 **SciPy** (pronounced “Sigh Pie”) is a Python-based ecosystem of open-source software for mathematics, science, and engineering. In particular, these are some of the core packages:
 - **NumPy** : Base N-dimensional array package
 - **SciPy library** : Fundamental library for scientific computing
@@ -6,6 +6,8 @@
 - **IPython** : Enhanced Interactive Console
 - **Sympy** : Symbolic mathematics
 - **pandas** : Data structures & analysis
+
+SciPy contains modules for optimization, linear algebra, integration, interpolation, special functions, FFT, signal and image processing, ODE solvers and other tasks common in science and engineering.
 
 This tutorial introduces the installation of **SciPy** on pcDuino8 Uno and quick start of Scipy.  
 

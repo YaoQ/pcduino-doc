@@ -1,11 +1,11 @@
 # How to create Swap on pcDuino8 Uno
 
-When I use `pip` command to install `scipy` on pcDuino8 Uno, after about one or two hours to compile, then you get errors seemly like:
+When I use `pip` command to install `scipy` on pcDuino8 Uno, after about one or two hours to compile, I get errors seemly like:
 > g++: internal compiler error: Killed (program cc1plus)  
 Please submit a full bug report,  
 with preprocessed source if appropriate.  
 
-Because pcDuino8 Uno has only 1GB ram which is not enough to compile `scipy`.At the same time I use `free -m` to check the ram and swap, it shows that the swap is 0. So if I add a swap partition, this error will be solved. 
+After I google with this error, I get what had happened. That's because pcDuino8 Uno has only 1GB ram which is not enough to compile `scipy`.At the same time I use `free -m` to check the ram and swap, it shows that the swap is 0. So if I add a swap partition, this error will be solved. 
 ```bash
 free -m
 sudo dd if=/dev/zero of=/var/swap.img bs=1M count=1000

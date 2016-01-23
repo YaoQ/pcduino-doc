@@ -101,20 +101,20 @@ If you get this error, it means node version is lower than 4.0, and you should u
 ```
 sudo npm install npm -g
 ```
->/usr/local/lib/node_modules/hapi/lib/index.js:5
-> const Server = require('./server');
-> ^^^^^
->SyntaxError: Use of const in strict mode.
->    at Module._compile (module.js:439:25)
->    at Object.Module._extensions..js (module.js:474:10)
->    at Module.load (module.js:356:32)
->    at Function.Module._load (module.js:312:12)
->    at Module.require (module.js:364:17)
->    at require (module.js:380:17)
->    at Object.<anonymous> (/home/linaro/iot/mqtt-pub-rest-api/index.js:1:74)
->    at Module._compile (module.js:456:26)
->    at Object.Module._extensions..js (module.js:474:10)
->    at Module.load (module.js:356:32)
+>/usr/local/lib/node_modules/hapi/lib/index.js:5   
+> const Server = require('./server');  
+> ^^^^^  
+>SyntaxError: Use of const in strict mode.  
+>    at Module._compile (module.js:439:25)  
+>    at Object.Module._extensions..js (module.js:474:10)  
+>    at Module.load (module.js:356:32)  
+>    at Function.Module._load (module.js:312:12)  
+>    at Module.require (module.js:364:17)  
+>    at require (module.js:380:17)  
+>    at Object.<anonymous> (/home/linaro/iot/mqtt-pub-rest-api/index.js:1:74)  
+>    at Module._compile (module.js:456:26)  
+>    at Object.Module._extensions..js (module.js:474:10)  
+>    at Module.load (module.js:356:32)  
 
 
 ## MQTT Client for Subscriber(Python)
@@ -200,6 +200,12 @@ Require:
 * Android SDK Build-tools 23.0.2
 
 ### Install JDK and android SDK
+#### Install JDK
+```bash
+sudo apt-get install openjdk-7-jre
+echo "export JAVA_HOME=/usr/lib/jvm/java-7-openjdk-amd64" >> ~/.bashrc
+````
+
 #### Download SDK
 Go to [Andorid SDK](http://developer.android.com/sdk/index.html) and scroll down till you find the “Other Download Options” section. In the “SDK Tools Only” section, select the Linux package. Wait for the download to finish.
 

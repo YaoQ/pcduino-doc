@@ -202,8 +202,10 @@ Require:
 ### Install JDK and android SDK
 #### Install JDK
 ```bash
-sudo apt-get install openjdk-7-jre
-echo "export JAVA_HOME=/usr/lib/jvm/java-7-openjdk-amd64" >> ~/.bashrc
+sudo apt-add-repository ppa:webupd8team/java
+sudo apt-get update
+sudo apt-get install oracle-java7-installer
+echo "export JAVA_HOME=/usr/lib/jvm/java-7-oracle" >> ~/.bashrc
 ````
 
 #### Download SDK

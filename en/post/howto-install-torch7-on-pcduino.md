@@ -28,10 +28,10 @@ free -m
 
 `vim /etc/lsb-release`
 >
-DISTRIB_ID=Ubuntu
-DISTRIB_RELEASE=14.04
-DISTRIB_CODENAME=trusty
-DISTRIB_DESCRIPTION="Ubuntu 14.04"
+    DISTRIB_ID=Ubuntu
+    DISTRIB_RELEASE=14.04
+    DISTRIB_CODENAME=trusty
+    DISTRIB_DESCRIPTION="Ubuntu 14.04"
 
 
 ### 4. install rep and deps

@@ -1,9 +1,9 @@
 # Torch7 Installation Guide
-1. Set time
+### 1. Set time
 ```
 sudo ntpdate -u us.pool.ntp.org
 ```
-2. create swap partition
+### 2. create swap partition
 ```
 free -m
 sudo dd if=/dev/zero of=/var/swap.img bs=1M count=1000
@@ -11,7 +11,7 @@ sudo mkswap /var/swap.img
 sudo swapon /var/swap.img
 free -m
 ```
-3. hack the system version
+### 3. hack the system version
 `vim /etc/os-release`
 
 >
@@ -34,13 +34,13 @@ DISTRIB_CODENAME=trusty
 DISTRIB_DESCRIPTION="Ubuntu 14.04"
 
 
-4. install rep and deps
+### 4. install rep and deps
 ```    
 sudo echo "deb http://ppa.launchpad.net/jtaylor/ipython/ubuntu trusty main" >> /etc/apt/sources.list.d/jtaylor-ipython-trusty.list
 wget --no-check-certificate https://raw.githubusercontent.com/torch/ezinstall/master/install-deps
 ```
 
-5. update install-deps script.file
+### 5. update install-deps script.file
 ```
 vim install-deps
 ```
@@ -55,7 +55,8 @@ comment out lines from 170 to 175
             sudo apt-get install -y libopenblas-dev liblapack-dev
         fi
 
-6. install torch
+
+### 6. install torch
 ```
 git clone https://github.com/torch/distro.git ~/torch --recursive
 cd ~/torch; ./install.sh

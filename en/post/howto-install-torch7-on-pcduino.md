@@ -47,14 +47,16 @@ vim install-deps
 comment out line 153
 >        #    sudo add-apt-repository -y ppa:jtaylor/ipython
 
-comment out lines from 170 to 175 
-> # if [[ $ubuntu_major_version -lt '14' ]]; then
+comment out lines from 170 to 175 and add `install_openblas`
+```bash
+  # if [[ $ubuntu_major_version -lt '14' ]]; then
   #          # Install from source after installing git and build-el
   #          install_openblas || true
   #      else
   #          sudo apt-get install -y libopenblas-dev liblapack-dev
   #      fi
   install_openblas
+```
 
 ### 6. install torch
 ```

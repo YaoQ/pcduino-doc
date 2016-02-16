@@ -121,7 +121,7 @@ Open a browser and enter `<your PC's IP addres>:3000` and you will get the websi
 
 1. **Sign Up** for a ThingSpeak account
 2. Create a new Channel by going to your Channels page and clicking **Create New Channel**  
-<img src="../images/API-key.png" title='API', width=400>
+<img src="../images/API-key.png" title='API', width=600>
 3. Update your Channel via URL:
 `http://192.168.1.100:3000/update?api_key=YOUR_CHANNEL_API_KEY&field1=7`
 4. View your Channel feed:

@@ -1,4 +1,4 @@
-# How to Install ThinkSpeak Server Standalone 
+# How to Install ThingSpeak Server Standalone
 [ThingSpeak](https://thingspeak.com/) is an open source “**Internet of Things**” application and API to store and retrieve data from things using HTTP over the Internet or via a Local Area Network. With ThingSpeak, you can create sensor logging applications, location tracking applications, and a social network of things with status updates.
 
 Below is the full steps of a ThingSpeak Server installation process on Ubuntu14.04(x86_64) which is finished about 30 min.
@@ -42,13 +42,13 @@ Files:        962
 sudo make install
 cd ..
 echo "gem: --no-rdoc --no-ri" >> ${HOME}/.gemrc
-sudo gem install rails 
+sudo gem install rails
 ```
 
 **Note:**
 If you get some error when you install rails, please check the following note. Hope it is helpful.
 
-1. 
+1.
 When you run `gem install rails`, if you get the following error:
 
 > ERROR:  Could not find a valid gem 'rails' (>= 0), here is why:  
@@ -76,17 +76,17 @@ bundle install
 bundle exec rake db:create
 ```
 **Note:**
-1. 
+1.
 If you get error when you install sqlite3 , try the following commands:
 ```
 sudo gem install sqlite3 -v '1.3.9'
 ```   
-2. 
+2.
 If you get an error when you install `libv8`, take the following commands:
 ```
 sudo gem install libv8 -v '3.16.14.7' -- --with-system-v8
 ```
-   
+
 ### Check MYSQL DB
 ```
 mysql --user=root mysql -p
@@ -101,16 +101,16 @@ mysql> show databases;
 #| thingspeak_development |
 #| thingspeak_test               |
 #+------------------------------+
-mysql> exit; 
+mysql> exit;
 
 ```
 * If MYSQL DB is OK, then run:
 
 ```
-bundle exec rake db:schema:load 
+bundle exec rake db:schema:load
 ```
 
-### Run the ThingSpeak Server 
+### Run the ThingSpeak Server
 ```
 rails server webrick.
 ```

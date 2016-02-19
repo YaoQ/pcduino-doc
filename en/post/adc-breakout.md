@@ -80,7 +80,7 @@ OBJS += helloADC
 make
 sudo output/helloADC
 ```
-**Note:** If you have not used the latest system image for pcDuino8 Uno, you have to use add `sudo` to access adc , the following content will tell you how to add permission for user linaro.
+**Note:** If you have not used the latest system image for pcDuino8 Uno, you have to add `sudo` to access adc , the following content will tell you how to add permission for user linaro.
 ```bash
 sudo echo "SUBSYSTEM=="i2cdev", GROUP="i2c"" > /etc/udev/rules.d/90-i2c.rules
 sudo useradd linaro i2c

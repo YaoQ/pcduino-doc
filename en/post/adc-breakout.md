@@ -37,6 +37,7 @@ make
 sudo ./output/adc_test
 ```
 * Input an analog signal on ADC0 channel
+
 ![](../images/p8-j10.png)
 
 * The adc_test program will print the value of analog signal as default.

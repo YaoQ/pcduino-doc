@@ -40,7 +40,7 @@ sudo ./output/adc_test
 
 ![](../images/p8-j10.png)
 
-* The adc_test program will print the value of analog signal as default.
+* The adc_test program will print the value of analog signal on ADC0 channel as default.
 
 ### Create your own source code for ADC
 Create new .c files in samples folder and modify Makefile to compile it. For example I want to create helloADC.c to read the values from all six ADC channels.

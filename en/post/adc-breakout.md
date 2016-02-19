@@ -12,13 +12,12 @@ This ADC breakout board is specially designed for pcDuino8 Uno which has no on-b
 * 3.3V power supply
 
 ## Tutorial
-![](../images/p8-j10.png)
 
 ### Connect to pcDuino8 Uno
 * Solder 90° 10-pins headers on J10 of pcDuino8 Uno
 * Plug the ADC breakout board into J10 (as shown in the following picture).
 
-![](../images/adc-mount.png)
+<img src="../images/adc-mount.png" title="adc-mount" width=400>
 
 ### Quick test
 * Install additional package(s) before use **pcduino8_uno_lib** on pcDuino8 Uno
@@ -38,6 +37,8 @@ make
 sudo ./output/adc_test
 ```
 * Input an analog signal on ADC0 channel
+![](../images/p8-j10.png)
+
 * The adc_test program will print the value of analog signal as default.
 
 ### Create your own source code for ADC

@@ -14,14 +14,14 @@ To make it easy for the end user, only one USB cable is needed to get started (t
 
 A VirtualBox Ubuntu image has also been created and has pre-installed all tools which make it VERY easy to get started using this development board. It is delivered with a complete OpenRISC processor SoC reference design that boots Linux 3.1.
 
-## Feature
+## Features
 * ALTERA Cyclone IV E, 22K LUT (P/N: EP4CE22F17C8N)
 * SDRAM 32 Mbyte
 * SPI FLASH, 1 Mbyte
 * SDIO micro connector
 * Fast Ethernet
 * 1 x micro USB for OTG HOST/SLAVE
-* 1x micro USB for power supply, configuration, UARTs
+* 1 x micro USB for power supply, configuration, UARTs
 * Expansion connectors
 * Supply via USB
 * Board size is 96 x 40 mm
@@ -154,3 +154,6 @@ You will get the information of eth0 whose IP address is **192.168.1.100**.
 ![](./images/terminal.png)
 
 You can connect the O-board to your PC directly via Ethernet cable, and set your PC's IP address as **192.168.1.?** which enables them in the same LAN, then you can test your connection by pinging a known IP address.
+
+## Schematic
+[O-board schematic](https://s3.amazonaws.com/linksprite/o-board/O-BOARD_SCH.pdf)

@@ -339,3 +339,8 @@ void loop() {
 }
 
 ```
+
+<img src="../images/deviceid.png" title="IoTgo" width="300">
+* Open your light device which is create on linksprite.io
+* Click the button **ON** and **OFF**
+* Check the status of LED on LinkNode D1, is it following your control? 

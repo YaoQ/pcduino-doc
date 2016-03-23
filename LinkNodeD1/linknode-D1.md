@@ -4,6 +4,7 @@
 LinkNode D1 is Arduino-compatible WiFi development board which is powered by the high integrated WiFi chip [ESP-8266EX](http://espressif.com/en/products/hardware/esp8266ex/overview).
 
 Thanks for the contribution from open source community who have developed Arduino core for ESP8266, this let Aduino IDE program LinkNode D1 without any change. At the same time, LinkNode D1 has Arduino-compatible pin out which make it very easy to connect to Arduino shield.
+
 ![](../images/linknoded1.jpg)
 
 ## Features
@@ -15,6 +16,26 @@ Thanks for the contribution from open source community who have developed Arduin
 * Compatible with [Arduino programming](https://github.com/pcduino/LinkNodeD1)
 * Compatible with [NodeMCU](http://www.nodemcu.com/)
 * OTA -- Wireless Upload(Program)
+
+## Pin Mapping
+| Arduino-Compatible Pins | ESP8266 Pins |
+|:--------:|:--------:|
+| D0        |    GPIO3    |
+| D1        |    GPIO1   |
+| D2       |    GPIO16    |
+| D3       |    GPIO5    |
+| D4       |    GPIO4    |
+| D5       |    GPIO14    |
+| D6       |    GPIO12    |
+| D7       |    GPIO13    |
+| D8       |    GPIO0    |
+| D9     |    GPIO2    |
+| D10      |    GPIO15    |
+| D11     |    GPIO13    |
+| D12     |    GPIO12    |
+| D13     |    GPIO14    |
+| D14     |    GPIO4    |
+| D15     |    GPIO5    |
 
 ## Tutorials
 
@@ -339,6 +360,8 @@ void loop() {
 }
 
 ```
+#### c. Test
+* Program the source code and open the Serial monitor to check the status
 
 <img src="../images/deviceid.png" title="IoTgo" width="300">
 * Open your light device which is create on linksprite.io

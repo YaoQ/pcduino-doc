@@ -62,8 +62,13 @@ mkdir esp8266com
 cd esp8266com
 git clone https://github.com/pcduino/LinkNodeD1
 ```
+#### d. Download binary tools (you need Python 2.7)
+```
+cd esp8266/tools
+python get.py
+```
 
-#### d. Check the configuration of Board
+#### e. Check the configuration of Board
 
 * Open Arduino IDE and go to **Tools --> Board --> LinkNode D1**
 * Choose your own configuration  
@@ -83,7 +88,7 @@ git clone https://github.com/pcduino/LinkNodeD1
 **Upload Speed**
 * **921600 bps** – recommend
 
-#### e. Create a Arduino Project
+#### f. Create a Arduino Project
 * Connect LinkNode D1 to your PC
 * Check your serial port which your PC recognize
 ![](../images/board-config.png)

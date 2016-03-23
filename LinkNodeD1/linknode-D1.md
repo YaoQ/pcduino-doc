@@ -18,22 +18,22 @@ Thanks for the contribution from open source community who have developed Arduin
 
 ## Tutorials
 
-### Get started in Arduino
+### 1. Get started in Arduino
 
 If you have used Arduino before, you will feel that the LinkNode D1 is as same as Arduino, and there is no difference between their programming. The only limitation of LinkNode D1 is that it only has 11 digital ports and 1 analog input port.  
 
-#### 1. Requirements
+#### a. Requirements
 * [Arduino IDE](https://www.arduino.cc/en/Main/Software), (the latest version is **1.6.8** )
 * The [Arduino core](https://github.com/pcduino/LinkNodeD1) for LinkNode D1
 
-#### 2. Manually install hardware package(Option 1)
+#### b. Manually install hardware package(Option 1)
 * Install Arduino IDE
 * Manually download hardware package from [github](https://github.com/pcduino/LinkNodeD1)
 * Click the button **Download ZIP** to download
 * Go to installation directory of Arduino IDE, and create  a **esp8266com** directory
 * Move the unzipped LinkNodeD1 file to **ESP8266com**
 
-#### 3. Use git to install (Option 2)
+#### c. Use git to install (Option 2)
 * You can use `git` command to download the hardware package like:
 ```
 cd <ArduinoIDE path>/hardware
@@ -42,7 +42,7 @@ cd esp8266com
 git clone https://github.com/pcduino/LinkNodeD1
 ```
 
-#### 4. Check the configuration of Board
+#### d. Check the configuration of Board
 
 * Open Arduino IDE and go to **Tools --> Board --> LinkNode D1**
 * Choose your own configuration  
@@ -62,7 +62,7 @@ git clone https://github.com/pcduino/LinkNodeD1
 **Upload Speed**
 * **921600 bps** – recommend
 
-#### 5. Create a Arduino Project
+#### e. Create a Arduino Project
 * Connect LinkNode D1 to your PC
 * Check your serial port which your PC recognize
 ![](../images/board-config.png)
@@ -85,7 +85,7 @@ void loop() {
 ```
 * After finish uploading, please check the BLUE LED on the ESP-8266EX chip, is it blinking?
 
-###  Hello World
+### 2. Hello World
 
 * Take the steps above and run the following code:
 

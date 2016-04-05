@@ -48,7 +48,6 @@ If you have used Arduino before, you will feel that the LinkNode D1 is as same a
 * The [Arduino core](https://github.com/pcduino/LinkNodeD1) for LinkNode D1
 
 #### b. Install hardware package for LinkNode D1
-
 - Install Arduino 1.6.8 from the [Arduino website](http://www.arduino.cc/en/main/software).
 - Start Arduino and go to **File --> Preferences** .
 - Enter ```http://arduino.esp8266.com/stable/package_esp8266com_index.json``` into **Additional Board Manager URLs** field. You can add multiple URLs, separating them with commas.
@@ -65,6 +64,9 @@ Because the LinkNode D1 have not add the offcial ESP8266 Arduino core repository
 ![](../images/board-config.png)
 
 #### d. Create a Arduino Project
+=======
+#### f. Create a Arduino Project
+>>>>>>> 1f278cc4c5f31695adcc3479664171cd6b1d7bd3
 * Connect LinkNode D1 to your PC
 * Check your serial port which your PC recognize
 

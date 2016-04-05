@@ -60,7 +60,7 @@ If you have used Arduino before, you will feel that the LinkNode D1 is as same a
 
 
 #### c. Check the configuration of Board
-Because the LinkNode D1 have not add the offcial ESP8266 Arduino core repository yet, so you can't find LinkNode D1 board on the boards list, but you can select the **WeMos D1(Retired)**, this board is fully compotiable with LinkNode D1.
+Because the LinkNode D1 has not been added into the offcial ESP8266 Arduino core repository yet, so you can't find LinkNode D1 board on the boards list, but you can use the **WeMos D1(Retired)**, this board is fully compotiable with LinkNode D1.
 ![](../images/board-config.png)
 
 #### d. Create a Arduino Project

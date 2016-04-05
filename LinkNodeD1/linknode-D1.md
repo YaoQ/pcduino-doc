@@ -64,12 +64,8 @@ Because the LinkNode D1 have not add the offcial ESP8266 Arduino core repository
 ![](../images/board-config.png)
 
 #### d. Create a Arduino Project
-=======
-#### f. Create a Arduino Project
->>>>>>> 1f278cc4c5f31695adcc3479664171cd6b1d7bd3
 * Connect LinkNode D1 to your PC
 * Check your serial port which your PC recognize
-
 * Enter the following source code and click the **Upload** button
 
 ```c

@@ -47,46 +47,26 @@ If you have used Arduino before, you will feel that the LinkNode D1 is as same a
 * [Arduino IDE](https://www.arduino.cc/en/Main/Software), (the latest version is **1.6.8** )
 * The [Arduino core](https://github.com/pcduino/LinkNodeD1) for LinkNode D1
 
-#### b. Manually install hardware package(Option 1)
-* Install Arduino IDE
-* Manually download hardware package from [github](https://github.com/pcduino/LinkNodeD1)
-* Click the button **Download ZIP** to download
-* Go to installation directory of Arduino IDE, and create  a **esp8266com** directory
-* Move the unzipped LinkNodeD1 file to **ESP8266com**
+#### b. Install hardware package for LinkNode D1
 
-#### c. Use git to install (Option 2)
-* You can use `git` command to download the hardware package like:
-```
-cd <ArduinoIDE path>/hardware
-mkdir esp8266com
-cd esp8266com
-git clone https://github.com/pcduino/LinkNodeD1
-```
+- Install Arduino 1.6.8 from the [Arduino website](http://www.arduino.cc/en/main/software).
+- Start Arduino and go to **File --> Preferences** .
+- Enter ```http://arduino.esp8266.com/stable/package_esp8266com_index.json``` into **Additional Board Manager URLs** field. You can add multiple URLs, separating them with commas.
+![](../images/Arduino-preferences.png)
 
-#### d. Check the configuration of Board
+- Open Boards Manager from **Tools --> Board menu --> Boards Manager**.
+![](../images/boards-manager.png)
+- Search and install **esp8266** platform (and don't forget to select your ESP8266 board from Tools --> Board menu after installation).
+![](../images/install-esp8266.png)
 
-* Open Arduino IDE and go to **Tools --> Board --> LinkNode D1**
-* Choose your own configuration  
 
-**Upload Using**
-* Serial – Use USB port on board to upload flash
-* OTA – Use OTA to upload flash
+#### c. Check the configuration of Board
+Because the LinkNode D1 have not add the offcial ESP8266 Arduino core repository yet, so you can't find LinkNode D1 board on the boards list, but you can select the **WeMos D1(Retired)**, this board is fully compotiable with LinkNode D1.
+![](../images/board-config.png)
 
-**CPU Frequency**
-* 80MHz
-* 160MHz
-
-**Flash Size**
-* 4M (3M SPIFFS) – 3M File system size
-* 4M (1M SPIFFS) – 1M File system size
-
-**Upload Speed**
-* **921600 bps** – recommend
-
-#### e. Create a Arduino Project
+#### d. Create a Arduino Project
 * Connect LinkNode D1 to your PC
 * Check your serial port which your PC recognize
-![](../images/board-config.png)
 
 * Enter the following source code and click the **Upload** button
 

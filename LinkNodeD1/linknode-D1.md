@@ -45,7 +45,7 @@ If you have used Arduino before, you will feel that the LinkNode D1 is as same a
 
 #### a. Requirements
 * [Arduino IDE](https://www.arduino.cc/en/Main/Software), (the latest version is **1.6.8** )
-* The [Arduino core](https://github.com/pcduino/LinkNodeD1) for LinkNode D1
+* The [Arduino core](https://github.com/esp8266/Arduino.git) for LinkNode D1
 
 #### b. Install hardware package for LinkNode D1
 - Install Arduino 1.6.8 from the [Arduino website](http://www.arduino.cc/en/main/software).

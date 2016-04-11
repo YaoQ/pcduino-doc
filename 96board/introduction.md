@@ -6,7 +6,7 @@ This is 7inch capacitive touch screen LCD with HDMI interface.The LCD uses stand
 ## Features
 * 800×480 high resolution
 * Capacitive touch control
-* Support 96Boards DB410C, comes with Debian images
+* Supports 96Boards DB410C, comes with Debian images
 * Supports Raspberry Pi
 * Supports Banana Pi / Banana Pro, comes with Lubuntu, Raspbian images
 * Supports BB Black, comes with Angstrom image
@@ -20,7 +20,7 @@ This is 7inch capacitive touch screen LCD with HDMI interface.The LCD uses stand
 * HDMI cable x 1
 * USB type A plug to micro B plug cable x 1
 * Screws pack (4pcs) x 1
-* SD card come with system image x 2
+* 8G SD card comes with system image x 2
 
 ## How to use with DragonBoard 410C
 

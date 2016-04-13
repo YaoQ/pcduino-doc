@@ -16,6 +16,7 @@ This [APK file](http://redbearlab.com/blecontroller.apk) is developed by [RedBea
 * Power on LinkNode
 * Turn on the bluetooth on you mobile
 * Open the APP and select **Simple Controls**
+
 <img src="../images/control1.jpg", width=300>
 * Go to Simple Control page
 

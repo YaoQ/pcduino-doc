@@ -18,10 +18,13 @@ This [APK file](http://redbearlab.com/blecontroller.apk) is developed by [RedBea
 * Open the APP and select **Simple Controls**
 <img src="../images/control1.jpg", width=300>
 * Go to Simple Control page
+
 <img src="../images/control2.jpg", width=300>
 * Scan the Bluetooth node named **Biscuit** which is hosted by LinkNode.
+
 <img src="../images/control3.jpg", width=300>
 * Use control bar to communicate with LinkNode
+
 <img src="../images/control4.jpg", width=300>
 
 |Pin Function|Description|LinkNode Pin Number|
@@ -40,15 +43,20 @@ The following section will introduce the basic workflow of this tools and how to
 * Download and install the [Evothings Studio](http://evothings.com/download/) on your host PC
 * Install [Evothings Viewer app](http://evothings.com/download/) on your Android or iOS device
 * Open Evothings Studio on your PC and you will get the following window, then click the **GET KEY** button.
+
 ![](../images/things2.png)
 * On your Mobile phone side, you shuold enter this KEY 
 **Note**: make sure your mobile and host PC are in the same LAN.
+
 <img src="../images/things3.jpg" width=300>
 
 * After connceted, click the Run button in the Evothings Studio.
+
 <img src="../images/things4.jpg" width=300>
 * The Simple Control project will run on the Evothings Views APP
+
 ![](../images/things5.png)
+
 <img src="../images/things6.jpg" width=300>
 * If you click the COPY buttion, you will get the Cordova project which is based on HTML5 website. And using [cordova tool](https://cordova.apache.org/), you can modify and build your own App, details please check this [Evothings Studio Starter Guide](https://evothings.com/doc/starter-guides/evothings-studio-starter-guide.html)
 

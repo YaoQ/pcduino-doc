@@ -11,8 +11,7 @@
 
 ## 2. Getting stated with 96Boards DB410C
 
-First, make sure you have installed Debian system on DB 410C board, if you haven't, please read the document on the following website:
-http://www.linksprite.com/wiki/index.php5?title=Linker_Touch_Screen_For_96board
+First, make sure you have installed Debian system on DB 410C board, if you haven't, please read the document on the following website: http://goo.gl/MQCbqH
 
 ![](../images/back.png)
 * Connect the **Display interface** on the LCD to the DB410c with the HDMI cable

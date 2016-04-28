@@ -124,7 +124,7 @@ void loop()
 
 ### 2. Remotely control LinkNode R4 with LinkSprite.IO platform
 
-[LinkSprite IO](www.linksprite.io) is an IoT platform which supports RESTful API and WebSocket. These make the mobile APP, website application or device connect it very easily. The following I will introduce is about how to use LinkNode D1 to communicate with LinkSprite IO platform.
+[LinkSprite IO](www.linksprite.io) is an IoT platform which supports RESTful API and WebSocket. These make the mobile APP, website application or device connect it very easily. The following I will introduce is about how to use LinkNode R4 to communicate with LinkSprite IO platform.
 
 #### a. Create a new account and device on LinkSprite.io
 * Go to www.linksprite.io and sign up
@@ -151,7 +151,7 @@ This demo will send http POST request to query the param--light on linksprite.io
 #### c. Install WiFi Manager library
 To make it more convinent, we add WiFi manager library in this demo.
 
-The ESP8266 WiFi Connection manager with web captive portal, this Arduino library can make configure AP's SSID and password via web page when you want LinkNode D1 to connect to AP.
+The ESP8266 WiFi Connection manager with web captive portal, this Arduino library can make configure AP's SSID and password via web page when you want LinkNode R4 to connect to AP.
 
 * Open Arduino IDE and go to **Sketch --> Include Library --> Manage Libraries**
 * Search the **wifimanager** and install it

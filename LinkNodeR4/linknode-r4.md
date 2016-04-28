@@ -1,25 +1,46 @@
-# LinkNode R4: Arduino-compatible WiFi relay controller
+# LinkNode R4/R8: Arduino-compatible WiFi relay controller
 
 ## Introduction
-LinkNode R4 is a WiFi relay controller and it is powered by **ESP-12f ESP8266 WiFi module** which is comptiable with Arduino programming. There are 4 relay channels and each channel allows you to control high-power devices (up to 10 A) via the on-board relay. LinkNode R4 can be used to remotely turn lights, fans and other devices on/off. The WiFi interface will allow you to associate the board with your existing WiFi network and send the commands over the network.
+LinkNode R4/R8 is a WiFi relay controller and it is powered by **ESP-12f ESP8266 WiFi module** which is comptiable with Arduino programming. There are 4/8 relay channels and each channel allows you to control high-power devices (up to 10 A) via the on-board relay. LinkNode R4/R8 can be used to remotely turn lights, fans and other devices on/off. The WiFi interface will allow you to associate the board with your existing WiFi network and send the commands over the network.
 
+#### LinkNode R4
 ![](../images/linknodeR4.png)
 
-## Feature
+#### LinkNode R8
+![](../images/R8.jpg)
+
+## Features
 - ESP-12f ESP8266 WiFi module
-- 4 Channel relays，supporting:
+- 4 Channel relays for **LinkNode R4**，supporting:
 	- 277V AC， 10A
-	- 125V AC， 12A 	
+	- 125V AC， 12A
+- 8 channel relays for **LinkNode R8**,supporting:
+	- 277V AC， 10A
+	- 125V AC， 12A	
 - 7-28V DC power
 - Two work modes:
   - Program via UART
   - Boot from flash
 - 4 indiator LEDs
 
-### LinkNode R4 Diagram
+### LinkNode R4 diagram
 ![](../images/R4-diagram.png)
 
-### Control logic
+### LinkNode R4 control logic
+| ESP8266 Pin | Control Signal|Relays'status|Indicator LED|
+|:--------:|:--------:|:----:|:-----:|
+|GPIO12 | 0 |S3 off| D6 off|
+|GPIO12| 1 | S3 on|D6 on|
+|GPIO13| 0 | S4 off|D7 off|
+|GPIO13 | 1 | S4 on |D7 on|
+|GPIO14 |0 |S2 off|D8 off|
+|GPIO14 |1 |S2 on|D8 on|
+|GPIO16 | 0 |S1 off|D9 off
+|GPIO16 | 1 |S1 on|D9 on|
+
+### LinkNode R8 diagram
+![](../images/R8-diagram.png)
+### LinkNode R8 control logic
 | ESP8266 Pin | Control Signal|Relays'status|Indicator LED|
 |:--------:|:--------:|:----:|:-----:|
 |GPIO12 | 0 |S3 off| D6 off|
@@ -30,10 +51,17 @@ LinkNode R4 is a WiFi relay controller and it is powered by **ESP-12f ESP8266 Wi
 |GPIO14 |1 |S2 on|D8 on|
 |GPIO16 | 0 |S1 off|D9 off
 |GPIO16 | 1 |S1 on|D9 on|
-
-
+|GPIO4 | 0 |S6 off| D17 off|
+|GPIO4| 1 | S6 on|D17 on|
+|GPIO5| 0 | S7 off|D10 off|
+|GPIO5 | 1 |S7 on |D10 on|
+|GPIO9 |0 |S8 off|D11 off|
+|GPIO9 |1 |S8 on|D11 on|
+|GPIO10 | 0 |S9 off|D12 off
+|GPIO10 | 1 |S9 on|D12 on|
 
 ## Tutorial
+Because the only difference between LinkNode R4 and LinkNode R8 is the number of relays, other things are all same including control logic and programming.So make it simple, this tutorial will take LinkNode R4 as an example.
 
 ### 1. Get started in Arduino programming
 

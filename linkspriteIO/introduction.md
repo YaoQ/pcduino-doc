@@ -25,7 +25,7 @@ LinkSpriteIO is also using **JSON Web Token** to protect Web API, so most of the
 
 Single-board microcontroller (like Arduino, ESP8266) developers, single-board computer (like pcDuino, Raspberry PI) developers and other embedded system developers could use LinkSpriteIO Device API to connect their devices to LinkSpriteIO and then easily control their devices by utilizing LinkSpriteIO Web App.
 
-Note: we also provide LinkSpriteIO-compatible Device Library which wraps LinkSpriteIO Device API.
+Note: we also provide LinkSpriteIO-compatible Device examples which wraps LinkSpriteIO Device API.
 
 Web developers and mobile developers could use LinkSpriteIO Web API to build various apps that manage devices connected to LinkSpriteIO. To control those devices, LinkSpriteIO Device API can be used.
 
@@ -45,5 +45,6 @@ Let us show you some actual case that using LinkSpriteIO!
 
 #### Smart WiFi Power Socket
 ![](http://prefundia.com/uploads/projects/3985/ff98a99be0f0893e9979c435d1001ab8.jpg) 
+
 #### Gas Detection Alarm [Mobile control and SMS alarm]
 ![](http://prefundia.com/uploads/projects/3985/ffddfc4871811d673925a6b94b0cf7b0.jpg)

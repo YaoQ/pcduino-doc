@@ -78,15 +78,19 @@ Note:  You can also edit the Makefile to change this more permanently.
 You should have a working webserver now.
 
 * Main page of this webserver
+
 ![](../images/index.png)
 
 * Update firmware via WiFi
+
 ![](../images/ota.png)
 
 * STA+AP mode, configure the WiFi.
+
 ![](../images/sta-ap.png)
 
 * Turn on or off Build-in LED on LinkNodeD1
+
 ![](../images/led-toggle.png)
 
 

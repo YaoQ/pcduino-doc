@@ -10,7 +10,9 @@ There is no source of linux-headers for pcDuino8 Uno, so it not easy to compile 
 - https://github.com/pcduino/pcduino8-uno-kernel
 
 ## Steps
-### 1. Download the source code from github and create a directory called linux-headers-3.4.39 at **/usr/src**.
+### 1. Prepare source code
+
+Download the source code from github and create a directory called linux-headers-3.4.39 at **/usr/src**.
 ```
 sudo mkdir /usr/src/linux-headers-3.4.39
 sudo cp ./linux-3.4 /usr/src/linux-headers-3.4.39 -r

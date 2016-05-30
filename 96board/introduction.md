@@ -75,7 +75,7 @@ Once the image is written on the SD Card per the previous section, perform the f
 * connect the power cable to the DB410c
 * After system enter into desktop, **disconnect the usb cable and reconnect again**, the touch function of LCD will be actived.
 
-![](../images/connect.png)
+![](../images/connect1.png)
 
 ####Note
 * Before powering up the DB410C, you should connect it to a LCD properly.

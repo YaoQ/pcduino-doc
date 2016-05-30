@@ -9,7 +9,7 @@
 * Screws pack (4pcs) x 1
 * SD card come with system image x 2
 
-## 2. Getting stated with 96Boards DB410C
+## 2. Getting started with 96Boards DB410C
 
 First, make sure you have installed Debian system on DB 410C board, if you haven't, please read the document on the following website: http://goo.gl/MQCbqH
 

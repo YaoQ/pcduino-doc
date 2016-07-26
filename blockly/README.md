@@ -30,6 +30,7 @@ Blockly一种在网页上运行的图形化编程语言。使用者以拖拽拼�
 ## 在Blockly中设定要编程的设备
 
 1. 点击右上角“Web Demo area”选择Web和blockly交换页面 
+
  ![](picture/17.PNG)  
 2. 将Choose切换到LinkspriteIO就可以获取到当前所有的设备列表  
  ![](picture/18.PNG)

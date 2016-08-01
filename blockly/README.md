@@ -35,7 +35,7 @@ Blockly一种在网页上运行的图形化编程语言。使用者以拖拽拼�
 2. 将Choose切换到LinkspriteIO就可以获取到当前所有的设备列表  
  ![](picture/18.PNG)
 
- **注意**:设备列表下的灯泡，可以通过编程对灯泡进行控制，实现与LED设备的同步,编程模块
+ **注意**:对于设备列表LinkSpriteIO--> LED的控制，对应于LinkSpriteIO的LED设备; 而Web Demo-->Click Buttion-->light相关的控制模块，对应于上图的图片中的灯泡。通过编程可以实现对图片的灯泡以及实际的LED设备进行编程。
 3. 通过**Group**和**Device Name**选择要编程的设备，就可以将当前的blockly切换到当前设备下，此时就可以对设备进行编程了  
 
 ## Blockly图像化编程
